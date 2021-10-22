@@ -192,7 +192,7 @@ When we use log-scale on the sine and cosine waves from before, we get the follo
 
 {% endmethod %}
 
-This is an awful plot, so it is only fitting that we use it as out example for the a few more plots in this chapter.
+This is an awful plot, so it is only fitting that we use it as our example for a few more plots in this chapter.
 
 #### labels, titles, and legends
 
@@ -233,7 +233,7 @@ First things first, you should probably use a legend, unless you are a legend yo
 {% sample lang="gnuplot" %}
 
 ```
-set nokey
+unset key
 ```
 
 which will produce a plot that looks like this:
@@ -373,7 +373,7 @@ We will add more aliases to this table as they are used in the Algorithm Archive
 
 ### Outputting the plot to file
 
-At this point, all the scripts have shown so far will output an image directly to your computer screen; however, it is important to note that you can use any of the above methods when outputting to a file as well.
+At this point, all the scripts we have shown so far will output an image directly to your computer screen; however, it is important to note that you can use any of the above methods when outputting to a file as well.
 
 {% method %}
 {% sample lang="gnuplot" %}
@@ -481,7 +481,7 @@ Which will provide the following output:
 {% endmethod %}
 
 ### Two-dimensional image output
-In the case of two-dimensional image output, the data file be similar, but this time, each number will be separated by a tab for different column entries and a newline for rows, as shown here:
+In the case of two-dimensional image output, the data file will be similar, but this time, each number will be separated by a tab for different column entries and a newline for rows, as shown here:
 
 [import](data/2d_sample_low_res.dat)
 
@@ -532,7 +532,7 @@ This example will output the following plot:
 
 ### Scatter Plots
 
-The scatter plot is another useful method for visualizing data that plots each point in an $$n$$ -dimensional space.
+The scatter plot is another useful method for visualizing data that plots each point in an $$n$$-dimensional space.
 For the purposes of the Algorithm Archive, this space is mainly two-dimensional; however, scatter plots in three-dimensions may also be used for visualizing three-dimensional datasets.
 We will update this section if three-dimensional scatter plots are required.
 
